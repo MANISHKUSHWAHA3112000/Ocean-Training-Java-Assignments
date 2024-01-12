@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ocean.institute.oops</groupId>
+  <artifactId>Oops</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M5</version> <!-- Use the latest version -->
+            <configuration>
+                <argLine>-javaagent:path/to/powermock-api-mockito2.jar</argLine>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
+
+
+
+<dependencies>
+    <!-- Mockito -->
+    <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>3.12.0</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- PowerMockito -->
+    <dependency>
+        <groupId>org.powermock</groupId>
+        <artifactId>powermock-api-mockito2</artifactId>
+        <version>2.0.9</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.powermock</groupId>
+        <artifactId>powermock-module-junit4</artifactId>
+        <version>2.0.9</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+    <groupId>org.powermock</groupId>
+    <artifactId>powermock-module-junit4-rule-agent</artifactId>
+    <version>2.0.9</version>
+    <scope>test</scope>
+</dependency>
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- PowerMock with JUnit 4 support -->
+    <dependency>
+        <groupId>org.powermock</groupId>
+        <artifactId>powermock-module-junit4</artifactId>
+        <version>2.0.9</version> <!-- Use the latest version -->
+        <scope>test</scope>
+    </dependency>
+
+    <!-- PowerMock core library -->
+    <dependency>
+        <groupId>org.powermock</groupId>
+        <artifactId>powermock-api-mockito2</artifactId>
+        <version>2.0.9</version> <!-- Use the same version as powermock-module-junit4 -->
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+
+
+</project>
